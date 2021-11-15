@@ -1,6 +1,5 @@
 # HollowLogin
-Hollow Login 
 # WEB 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![This is an image](https://github.com/Nhed1/HollowLogin/blob/main/images/web.png?raw=true)
 # MOBILE 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![This is an image](https://github.com/Nhed1/HollowLogin/blob/main/images/mobile.png?raw=true)
