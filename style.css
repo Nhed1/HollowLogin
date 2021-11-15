@@ -44,8 +44,7 @@ body {
 /* containers styles, externos a div central*/
 header {
     left: 0;
-    padding-top: 1rem;
-    padding-left: 5rem;
+    padding: 25px;
     /* border: 1px black solid; */
     position: absolute;
     top: 0;
@@ -106,6 +105,7 @@ form {
     cursor: pointer;
     border: 1px black solid;
     border-radius: 5px;
+    background-color: white;  
 }
 .button:hover{
     background-color: rgba(232, 232, 232, 1 );
@@ -115,7 +115,6 @@ form {
     margin-top: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
-    background-color: white;  
     
 }
 .facebook{
@@ -134,7 +133,18 @@ form {
 
 /* media query */
 @media all and (max-width: 570px){
+    .bem-vindo, .registrar-login {
+        padding: 10px;
+    }
+
     .container-login{
         grid-template-columns: 100%;
     }
+    header{
+        padding: 5px;
+    }
+    .image{
+        width: 50px;
+    }
+
 }
