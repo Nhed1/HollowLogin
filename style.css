@@ -103,13 +103,26 @@ form {
 .button {
     padding: 5px 20px;  
     background-color: transparent;  
+    cursor: pointer;
+    border: 1px black solid;
+    border-radius: 5px;
 }
+.button:hover{
+    background-color: rgba(232, 232, 232, 1 );
+}
+
 .submit {
     margin-top: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
     background-color: white;  
-
+    
+}
+.facebook{
+    color: rgb(21, 21, 230);
+}
+.google{
+    color: rgb(255, 13, 13);
 }
 
 /* esquerda */
@@ -118,9 +131,6 @@ form {
     flex-direction: column;
     text-align: center;
 }
-
-
-
 
 /* media query */
 @media all and (max-width: 570px){
