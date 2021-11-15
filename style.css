@@ -1,14 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap');
 
+/* default styles */
 :root {
     --yellow: #ffc107;
 }
 
+html {
+    height: 100vh;
+    width: 100vw;
+}
+  
 body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
+    /* background-color: yellow; */
+}
+.image {
+    width: 70px;
+    height: auto;
+}
+/* --------- */
+
+/* containers styles, externos a div central*/
+header {
+    left: 0;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    /* border: 1px black solid; */
+    position: absolute;
+    top: 0;
 }
 
+.container {
+    /* width: 100vw; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* ---------- */
 
+/* container central ! */
+.container-login {
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 5%;
+    justify-self: center;
+}
+
+.email, .senha{
+    display: flex;
+    flex-direction: column;
+    margin: 0.8rem 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrar {
+    flex-direction: column;
+}
+.registrar-buttons {
+    width: 100%;
+}
