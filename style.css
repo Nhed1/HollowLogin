@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap');
 
 /* default styles */
+p,label {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
 :root {
     --yellow: #ffc107;
 }
@@ -27,6 +35,7 @@ body {
     /* background-color: yellow; */
 }
 .image {
+    padding: 1px;
     width: 70px;
     height: auto;
 }
@@ -54,14 +63,23 @@ header {
 
 /* container central ! */
 .container-login {
-    border: 1px black solid;
+    /* border: 1px black solid; */
     display: grid;
-    grid-template-columns: 35% 60%;
-    gap: 5%;
+    grid-template-columns: 40% 60%;
     justify-self: center;
-    padding: 7%;
-    background-color: chocolate;
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+form {
+    flex-direction: column;
+}
+
+.bem-vindo, .registrar-login {
+    padding: 30px;
+    background-color: var(--yellow);
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -69,6 +87,7 @@ header {
 }
 
 /*  direita */
+
 .email, .senha{
     display: flex;
     flex-direction: column;
@@ -80,11 +99,28 @@ header {
 .registrar-buttons {
     width: 100%;
 }
+
+.button {
+    padding: 5px 20px;  
+    background-color: transparent;  
+}
+.submit {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;  
+
+}
+
 /* esquerda */
 .bem-vindo {
+    background-color: white;
     flex-direction: column;
     text-align: center;
 }
+
+
+
 
 /* media query */
 @media all and (max-width: 570px){
