@@ -11,6 +11,14 @@ html {
 }
   
 body {
+    /* background image */
+    background-image: url(images/pexels-mikhail-nilov-7583935.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--yellow);
+    /* ---- */
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -51,23 +59,36 @@ header {
     grid-template-columns: 35% 60%;
     gap: 5%;
     justify-self: center;
+    padding: 7%;
+    background-color: chocolate;
 }
-
-.email, .senha{
-    display: flex;
-    flex-direction: column;
-    margin: 0.8rem 0;
-}
-
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*  direita */
+.email, .senha{
+    display: flex;
+    flex-direction: column;
+    margin: 0.8rem 0;
+}
 .registrar {
     flex-direction: column;
 }
 .registrar-buttons {
     width: 100%;
+}
+/* esquerda */
+.bem-vindo {
+    flex-direction: column;
+    text-align: center;
+}
+
+/* media query */
+@media all and (max-width: 570px){
+    .container-login{
+        grid-template-columns: 100%;
+    }
 }
