@@ -15,15 +15,20 @@
     </header>
 
     <div class="login-registrar">
+        <div class="bem-vindo">
+            <h1>Bem vindo a Hollow!</h1>
+            <p>Faça seu Login e comece a estudar!</p>
+        </div>
+
         <div class="login">
             <form action="#">
                 <div class="email">
                     <label for="email">Email</label>
-                    <input type="email">
+                    <input type="email" required placeholder="Digite seu Email">
                 </div>
                 <div class="senha">
                     <label for="senha">Senha</label>
-                    <input type="password">
+                    <input type="password" required placeholder="Digite sua Senha">
                 </div>
                 <div class="lembrar">
                     <input type="checkbox" name="lembrar">
@@ -35,12 +40,18 @@
         <div class="registrar">
             <h2>Ou Regista-te!</h2>
             <div class="registrar-buttons">
-                <button class="facebook"></button>
-                <button class="google"></button>
+                <button class="facebook">
+                    <ion-icon name="logo-facebook" size="large"></ion-icon>
+                </button>
+                <button class="google">
+                    <ion-icon name="logo-google" size="large"></ion-icon>
+                </button>
             </div>
         </div>
     </div>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
