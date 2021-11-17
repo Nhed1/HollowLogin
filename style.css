@@ -91,10 +91,7 @@ form {
 
 .bem-vindo, .registrar-login {
     padding: 30px;
-    background-color: var(--yellow);
-    /* width: fit-content; */
-    flex-wrap: wrap;
-
+    background-color: var(--yellow); 
 }
 
 /*  direita */
@@ -109,7 +106,7 @@ form {
     font-family:inherit;
 }
 ion-icon {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
 }
 .lembrar {
@@ -127,19 +124,16 @@ ion-icon {
     border: none;
     outline: none;
     position: relative;
-    /* margin: 10px auto 0px auto; */
     color: var(--yellow); 
     background-color: var(--white);
 }
 .button:hover {
-    background-color: rgba(85, 79, 79, 0.8);
+    background-color: rgba(70, 65, 65, 0.7);
     border: none;
     -webkit-transition: background-color 300ms linear;
     -ms-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
 }
-
-
 .registrar {
     display: grid;
     grid-template-rows: 1fr;
@@ -152,13 +146,12 @@ ion-icon {
     margin-bottom: 5px;
     padding: 0;
 }
-/* .registrar-buttons { */
 .submit {
     margin-top: 0.5rem;
     font-size: 1rem;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
+
 .registrar .btn{
     margin-top: 5px;
     font-size: 1rem;
@@ -203,7 +196,7 @@ ion-icon {
 
 @media all and (max-width: 400px){
     .bem-vindo, .registrar-login {
-        padding: 8px;
+        padding: 10px;
     }
     h1 {
         font-size: 2rem;
@@ -212,7 +205,7 @@ ion-icon {
         font-size: 1rem;
     }
     .container-login{
-        min-width: 260px;
+        min-width: 280px;
         grid-template-columns: 100%;
         width: 60%;
     }
