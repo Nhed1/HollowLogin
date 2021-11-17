@@ -8,7 +8,7 @@
     align-items: center;
 }
 .shadow-fraca {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(93, 98, 102, 0.35) 0px 8px 24px;
 }
 .shadow-forte {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -35,8 +35,8 @@ html {
   
 body {
     /* background image */
-    background-image: url(images/pexels-mikhail-nilov-7583935.jpg);
-    background-position: center center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -186,7 +186,6 @@ ion-icon {
     .login{
         margin-top: 10px;
     }
-
 }
 
 @media all and (max-width: 400px){
