@@ -25,6 +25,7 @@ h1 {
 
 :root {
     --yellow: #ffc107;
+    --white: #ffffff;
 }
 
 html {
@@ -103,8 +104,6 @@ form {
 .input {
     padding: 5px;
     border: none;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
     font-family:inherit;
 }
 .lembrar {
@@ -117,7 +116,7 @@ form {
 }
 .button {
     margin-top: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
     color: var(--yellow);
     font-size: 1.25rem;
     font-weight: 900;
@@ -161,11 +160,12 @@ form {
 }
 
 /* media query */
-@media all and (max-width: 570px){
+@media all and (max-width: 770px){
     .bem-vindo, .registrar-login {
-        padding: 5px;
+        padding: 15px;
     }
     .container-login{
+        min-width: 350px;
         grid-template-columns: 100%;
         width: 80%;
     }
@@ -182,4 +182,24 @@ form {
         margin-top: 10px;
     }
 
+}
+
+@media all and (max-width: 400px){
+    .bem-vindo, .registrar-login {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p, label, .button {
+        font-size: 1rem;
+    }
+    .container-login{
+        min-width: 260px;
+        grid-template-columns: 100%;
+        width: 60%;
+    }
+    .image{
+        width: 50px;
+    }
 }
