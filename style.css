@@ -17,6 +17,7 @@
 
 p,label {
     font-size: 1.2rem;
+    color: var(--gray);
 }
 
 h1 {
@@ -169,6 +170,14 @@ ion-icon {
     background-color: var(--white);
     flex-direction: column;
     text-align: center;
+}
+.bem-vindo h1{
+    color: var(--yellow);
+    font-weight: bold;
+    margin-bottom: 15px
+}
+.bem-vindo p {
+    color: var(--gray);
 }
 
 /* media query */
