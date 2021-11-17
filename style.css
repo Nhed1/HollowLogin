@@ -170,13 +170,16 @@ form {
         width: 80%;
     }
     header{
-        padding: 5px;
+        padding: 10px;
     }
     .image{
-        width: 50px;
+        width: 60px;
     }
     .registrar-buttons{
         margin-bottom: 10px;
+    }
+    .login{
+        margin-top: 10px;
     }
 
 }
